@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --trans-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-grey: hsl(0, 0%, 95%);
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--very-light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+}
+.container{
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+}
+.card{
+    padding: 3rem;
+}
+
+.card:first-child{
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem ;
+    background-color: var(--bright-orange);
+}
+.card:nth-child(2){
+    background-color: var(--dark-cyan);
+}
+.card:nth-child(3){
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem ;
+}
+
+
+
+.card img{
+    padding-top: 1rem;
+}
+
+.card h1{
+    font-weight: var(--font-weight-700);
+    color: var(--very-light-grey);
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.card p{
+    font-weight: var(--font-weight-400);
+    color: var(--trans-white);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.75;
+    margin-right: 1rem;
+}
+.card a{
+    display: inline-block;
+    margin-top: 5rem;
+    background-color: var(--very-light-grey);
+    font-weight: var(--font-weight-400);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: var(--font-size);
+    border-radius: 3rem;
+    padding: 10px 20px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid var(--very-light-grey);
+    transition: all 0.3s ease;
+}
+
+
+
+.card:first-child a{
+    color: var(--bright-orange);
+}
+.card:nth-child(2) a{
+    color: var(--dark-cyan);
+}
+.card:nth-child(3) a{
+    color: var(--very-dark-cyan);
+}
+.card:first-child a:hover{
+    color: var(--very-light-grey);
+    background-color: var(--bright-orange);
+}
+.card:nth-child(2) a:hover{
+    color: var(--very-light-grey);
+    background-color: var(--dark-cyan);
+}
+.card:nth-child(3) a:hover{
+    color: var(--very-light-grey);
+    background-color: var(--very-dark-cyan);
+}
